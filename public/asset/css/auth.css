@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Renner*";
+    src: url("../fonts/Renner_\ 400.ttf") format("truetype"),
+        url("../fonts/Renner_\ 600.ttf") format("truetype"),
+        url("../fonts/Renner_\ 700.ttf") format("truetype");
+}
+
+:root {
+    --font: #244eb8;
+    --border: #e504a8;
+    --bg-container: #fdf8f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 16px "Renner*";
+    color: var(--font);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.form-login {
+    background: url("../img/bg-nilo.png") no-repeat top;
+}
+
+.title {
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+}
+
+.title, b {
+    font-size: 2.4rem;
+}
+
+.form-login input {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-login input:focus {
+    outline: none;
+    border: 1px solid var(--border);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-login button {
+    border: none;
+    background-color: #F9B4E4;
+}

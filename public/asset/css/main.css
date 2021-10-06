@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "Renner*";
+    src: url("../fonts/Renner_\ 400.ttf") format("truetype"),
+        url("../fonts/Renner_\ 600.ttf") format("truetype"),
+        url("../fonts/Renner_\ 700.ttf") format("truetype");
+}
+
+:root {
+    --font: #244eb8;
+    --border: #e504a8;
+    --bg-container: #fdf8f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 16px "Renner*";
+    color: var(--font);
+    border-radius: 20px;
+}
+
+/* dashbboard page */
+
+/* header in dashboard*/
+.row {
+    gap: 30px;
+}
+
+.logo img {
+    width: 35%;
+}
+
+.greetings {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.greetings h1,
+span {
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.photo-admin {
+    width: 18%;
+}
+
+.dropdown button {
+    background-color: var(--bg-container);
+    color: var(--font);
+}
+
+.dropdown button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown button:hover,
+.dropdown .dropdown-item:hover {
+    color: var(--font);
+}
+
+.dropdown-list {
+    background-color: var(--bg-container) !important;
+    border: none !important;
+    width: 30px !important;
+}
+
+.dropdown-list .dropdown-item {
+    color: var(--font);
+}
+
+.dropdown-list .dropdown-item:hover {
+    font-weight: bold;
+    background-color: var(--bg-container);
+    border-radius: 0;
+}
+
+/* end */
+
+/* header in menu */
+.search-menu input,
+.search-transaction input {
+    border: 1px solid var(--border);
+    background-color: var(--bg-container);
+}
+
+.search-menu input:focus,
+.search-transaction input:focus {
+    outline: none;
+}
+
+/* end header in menu */
+
+/* panel navigation */
+nav,
+.profile {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.nav-list {
+    padding-left: 2em;
+}
+
+.nav-list span {
+    font-size: 26px;
+    color: var(--font);
+    padding-left: 0.5em;
+    margin-top: 0.1em;
+}
+
+.nav-list img {
+    border-radius: 0;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.divider {
+    border-top: 1px solid var(--border);
+    margin: 1.5em 0;
+}
+
+/* end */
+
+/* main content */
+
+/* content 1 */
+.amount-menu,
+.amount-orders {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.amount-menu a,
+.amount-orders a {
+    color: var(--font);
+}
+
+.amount-menu a:hover,
+.amount-orders a:hover {
+    text-decoration: none;
+}
+
+/* end */
+
+/* content 2 */
+.container-recent-orders {
+    gap: 0;
+}
+
+.container-recent-orders .recent-orders {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.container-recent-orders .recent-orders table th {
+    padding: 0.6em 0.7em;
+    border-bottom: 1px solid var(--border);
+}
+
+.container-recent-orders .recent-orders table th,
+td {
+    font-size: 0.9rem;
+}
+
+.container-recent-orders .recent-orders table td {
+    padding: 0.6em 0.7em;
+}
+
+/* end */
+
+/*  content 3 */
+.signature-menus {
+    gap: 5;
+}
+
+.box-signature {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+    width: 29%;
+}
+
+/* end */
+
+/* end */
+
+/* right panel */
+
+/* calendar */
+.calendar,
+.grafik-report {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.calendar .month,
+.year {
+    font-size: 42px;
+}
+
+.calendar .date {
+    font-size: 70px;
+}
+
+#myChart {
+    color: var(--font);
+}
+
+/* end calendar*/
+
+/* end dashboard page*/
+
+/* menu page */
+.table-menu {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.table-menu table {
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.table-menu th,
+td {
+    padding: 1.3em;
+    border-radius: 0;
+}
+
+.table-menu th {
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+}
+
+.table-menu tr:hover {
+    background-color: #FDD2F0;
+}
+
+.table-menu tr:first-child:hover {
+    background-color: var(--bg-container);
+}
+
+.table-menu td {
+    font-size: 1em;
+}
+
+.table-menu td .img-pc {
+    width: 50%;
+}
+
+.table-menu td .img-mililiter,
+.img-liter {
+    width: 25%;
+}
+
+.table-menu .btn-edit {
+    background-color: var(--font);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8em;
+}
+
+.table-menu .btn-edit:hover {
+    text-decoration: none;
+}
+
+.table-menu .btn-delete {
+    background-color: #DF4759;
+    color: #fff;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 20px;
+}
+
+.table-menu .btn-edit:focus,
+.btn-delete:focus {
+    outline: none;
+}
+
+/* end menu page */
+
+
+/* addmenu page */
+.form-add-menu {
+    background-color: var(--bg-container);
+}
+
+.form-add-menu input,
+.form-add-menu select,
+.form-add-menu option {
+    border: 1px solid var(--border);
+    background-color: var(--bg-container);
+}
+
+.form-add-menu input:focus,
+.form-add-menu select:focus {
+    outline: none;
+    background-color: var(--bg-container);
+    color: var(--font);
+}
+
+.form-add-menu select {
+    color: var(--font);
+}
+
+.form-add-menu .price span {
+    font-size: 1.2rem;
+}
+
+.form-add-menu .input-photo label {
+    border: 1px solid var(--border);
+    width: 100%;
+    padding: 3em 0;
+}
+
+.form-add-menu button,
+.form-add-menu button:hover {
+    background-color: #FDD2F0;
+    color: var(--font);
+    font-size: 1.5rem;
+}
+
+.form-add-menu button:hover {
+    border: 1px solid var(--border);
+}
+
+/* end addmenu page */
+
+/* transaction page */
+.transcations-row {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border);
+}
+
+.transcations-row table {
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.transcations-row th,
+td {
+    padding: 1.3em;
+    border-radius: 0;
+}
+
+.transcations-row th {
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+}
+
+.transcations-row tr:hover {
+    background-color: #FDD2F0;
+}
+
+.transcations-row tr:hover:first-child {
+    background-color: var(--bg-container)
+}
+
+.transcations-row button,
+a {
+    padding: 0.4em 1.5em;
+    border-radius: 20px;
+    border: none;
+}
+
+.transcations-row button:focus {
+    outline: none;
+}
+
+.transcations-row .btn-detail {
+    background-color: var(--font);
+    color: #fff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.transcations-row img {
+    width: 50px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.transcations-row span {
+    font-size: 0.9rem;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+}
+
+.pending {
+    background-color: #DF4759;
+    color: #fff;
+}
+
+.process {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.success {
+    background-color: #42ba96;
+    color: #fff;
+}
+
+.fade {
+    border-radius: 0;
+}
+
+.header-modal {
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+}
+
+.header-modal .modal-title {
+    font-size: 1.4rem;
+}
+
+.modal-detail .table-detail .btn-change-status {
+    background-color: #FDD2F0;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+}
+
+.modal-detail .table-detail .btn-change-status:focus {
+    outline: none;
+}
+
+.modal-detail .table-detail a,
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal-detail .table-detail .table-orders {
+    border: 1px solid var(--border);
+    border-color: var(--border);
+}
+
+.modal-detail .table-detail .table-orders th,
+.table-orders th td {
+    padding: 0.5em 1em;
+    border: 1px solid var(--border);
+}
+
+/* .modal-detail .table-detail .set-process {
+
+} */
+
+.modal-payment {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0px;
+}
+
+.modal-payment .modal-content {
+    margin: auto;
+    display: block;
+    width: 25%;
+    max-width: 500px;
+}
+
+.modal-payment .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-payment .close:hover {
+    color: #fff;
+}
+
+/* end transaction page */
