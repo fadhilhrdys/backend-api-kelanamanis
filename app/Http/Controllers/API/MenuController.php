@@ -43,15 +43,22 @@ class MenuController extends Controller
         };
 
         // cari data sesuai name n categories
+        if ($categories) {
+            // cari menu yang categorynya sama dengan data yang diampung kedalam variabel
+            $menus = Menu::where('categories', $categories)->get();
+            // jika data ada
+            if ($menus) {
+                return ResponseFormatter::success($menus, 'Data Berhasil Diambil');
+            } else {
+                return ResponseFormatter::error(null, 'Data Tidak Ada', 404);
+            }
+        }
+
         $menus = Menu::all();
 
         if ($name) {
-            $menus->where('name', 'like', '%', $name, '%');
+            $menus->where('name', 'like', '%' . $name . '%');
         };
-
-        if ($categories) {
-            $menus->where('categories', 'like', '%', $categories, '%');
-        }
 
         return ResponseFormatter::success($menus, 'Data Berhasil Diambil');
     }

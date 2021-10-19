@@ -21,4 +21,10 @@ class Menu extends Model
     {
         return $this->hasMany(transactionDetail::class, 'menuID');
     }
+
+    // function utk menambahkan url jika diakses
+    public function getPhotoAttribute($value)
+    {
+        return url('storage/' . $value);
+    }
 }

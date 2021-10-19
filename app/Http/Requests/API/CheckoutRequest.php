@@ -25,12 +25,12 @@ class CheckoutRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255',
-            'phone_number' => 'required|numeric',
+            'phone_number' => 'required',
             'address' => 'required',
-            'zip' => 'required|integer',
+            'zip' => 'required',
             'toping' => 'max:255',
-            'quantity' => 'required|integer',
-            'payment' => 'image|mimes:jpg,jpeg,png',
+            'quantity' => 'required',
+            'payment' => '',
             'transaction_total' => 'required|integer',
             'transaction_status' => 'nullable|string|in:PENDING,PROCESS,SUCCESS',
             'transaction' => 'required|array',
