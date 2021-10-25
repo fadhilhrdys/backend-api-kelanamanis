@@ -33,7 +33,7 @@
                     <td>{{ $no++ }}</td>
                     <td class="p-0">{{ $pc->name }}</td>
                     <td>@currency($pc->price)</td>
-                    <td class=" p-0 text-center"><img class="img-pc" src="{{ asset('storage/' . $pc->photo) }}" alt="">
+                    <td class=" p-0 text-center"><img class="img-pc" src="{{ asset( $pc->photo) }}" alt="">
                     </td>
                     <td class="text-center">
                         <a href="{{ route('menu.edit', $pc->id) }}" class="btn-edit">EDIT</a>
@@ -79,8 +79,8 @@
                     <td>{{ $no++ }}</td>
                     <td class="p-0">{{ $liter->name }}</td>
                     <td>@currency($liter->price)</td>
-                    <td class="p-0 w-25 text-center"><img class="img-liter"
-                            src="{{ asset('storage/' . $liter->photo) }}" alt=""></td>
+                    <td class="p-0 w-25 text-center"><img class="img-liter" src="{{ asset($liter->photo) }}" alt="">
+                    </td>
                     <td class="text-center">
                         <a href="{{ route('menu.edit', $liter->id) }}" class="btn-edit">EDIT</a>
                         <form class="d-inline ml-2" action="{{ route('menu.destroy', $liter->id )}}" method="POST">
@@ -125,8 +125,8 @@
                     <td>{{ $no++ }}</td>
                     <td class="p-0">{{ $mililiter->name }}</td>
                     <td>@currency($mililiter->price)</td>
-                    <td class="p-0 w-25 text-center"><img class="img-mililiter"
-                            src="{{ asset('storage/' . $mililiter->photo) }}" alt=""></td>
+                    <td class="p-0 w-25 text-center"><img class="img-mililiter" src="{{ asset( $mililiter->photo) }}"
+                            alt=""></td>
                     <td class="text-center">
                         <a href="{{ route('menu.edit', $mililiter->id) }}" class="btn-edit">EDIT</a>
                         <form class="d-inline ml-2" action="{{ route('menu.destroy', $mililiter->id )}}" method="POST">
