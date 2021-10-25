@@ -32,6 +32,6 @@ class CheckoutController extends Controller
         // simpan data relasinya
         $transactions->transaction()->saveMany($transaction);
         // kembalikan datanya ke response formatter
-        return ResponseFormatter::success($transaction);
+        return ResponseFormatter::success($transactions);
     }
 }
